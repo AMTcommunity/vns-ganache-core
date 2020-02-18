@@ -3,7 +3,7 @@ var assert = require('assert');
 var Ganache = require("../index.js");
 
 
-describe("Ethereum", function(done) {
+describe("Vnscoin", function(done) {
   var web3 = new Web3();
   var provider;
 
@@ -12,7 +12,7 @@ describe("Ethereum", function(done) {
     web3.setProvider(provider);
   });
 
-  it("should get ethereum version (vns_protocolVersion)", function() {
+  it("should get vnscoin version (vns_protocolVersion)", function() {
     return web3.vns.getProtocolVersion().then(result => {
       assert.equal(result, "63", "Network Version should be 63");
     })
