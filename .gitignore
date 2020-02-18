@@ -3,6 +3,7 @@ TODO
 *.log
 .eslintrc.js
 .tern-project
+.idea
 .DS_Store
 .tern-port
 .vscode

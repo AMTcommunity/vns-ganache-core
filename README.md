@@ -1,13 +1,13 @@
 [![npm](https://img.shields.io/npm/v/ganache-core.svg)]()
 [![npm](https://img.shields.io/npm/dm/ganache-core.svg)]()
 [![Build Status](https://travis-ci.org/trufflesuite/ganache-core.svg?branch=master)](https://travis-ci.org/trufflesuite/ganache-core)
-# Ganache Core
+# Vns-Ganache-Core
 
 This is the core code that powers the Ganache application and the the Ganache command line tool.
 
 # INSTALL
 
-`ganache-core` is written in Javascript and distributed as a Node package via `npm`. Make sure you have Node.js (>= v6.11.5) installed, and your environment is capable of installing and compiling `npm` modules.
+`vns-ganache-core` is written in Javascript and distributed as a Node package via `npm`. Make sure you have Node.js (>= v6.11.5) installed, and your environment is capable of installing and compiling `npm` modules.
 
 **macOS** Make sure you have the XCode Command Line Tools installed. These are needed in general to be able to compile most C based languages on your machine, as well as many npm modules.
 
@@ -17,7 +17,7 @@ This is the core code that powers the Ganache application and the the Ganache co
 
 
 ```Bash
-npm install ganache-core
+npm install vns-ganache-core
 ```
 
 # USAGE
@@ -25,14 +25,14 @@ npm install ganache-core
 As a Web3 provider:
 
 ```javascript
-var Ganache = require("ganache-core");
+var Ganache = require("vns-ganache-core");
 web3.setProvider(Ganache.provider());
 ```
 
 As a general http server:
 
 ```javascript
-var Ganache = require("ganache-core");
+var Ganache = require("vns-ganache-core");
 var server = Ganache.server();
 server.listen(port, function(err, blockchain) {...});
 ```
@@ -66,40 +66,40 @@ The RPC methods currently implemented are:
 * `bzz_hive` (stub)
 * `bzz_info` (stub)
 * `debug_traceTransaction`
-* `eth_accounts`
-* `eth_blockNumber`
-* `eth_call`
-* `eth_coinbase`
-* `eth_estimateGas`
-* `eth_gasPrice`
-* `eth_getBalance`
-* `eth_getBlockByNumber`
-* `eth_getBlockByHash`
-* `eth_getBlockTransactionCountByHash`
-* `eth_getBlockTransactionCountByNumber`
-* `eth_getCode` (only supports block number “latest”)
-* `eth_getCompilers`
-* `eth_getFilterChanges`
-* `eth_getFilterLogs`
-* `eth_getLogs`
-* `eth_getStorageAt`
-* `eth_getTransactionByHash`
-* `eth_getTransactionByBlockHashAndIndex`
-* `eth_getTransactionByBlockNumberAndIndex`
-* `eth_getTransactionCount`
-* `eth_getTransactionReceipt`
-* `eth_hashrate`
-* `eth_mining`
-* `eth_newBlockFilter`
-* `eth_newFilter` (includes log/event filters)
-* `eth_protocolVersion`
-* `eth_sendTransaction`
-* `eth_sendRawTransaction`
-* `eth_sign`
-* `eth_subscribe` (only for websocket connections. "syncing" subscriptions are not yet supported)
-* `eth_unsubscribe` (only for websocket connections. "syncing" subscriptions are not yet supported)
-* `eth_syncing`
-* `eth_uninstallFilter`
+* `vns_accounts`
+* `vns_blockNumber`
+* `vns_call`
+* `vns_coinbase`
+* `vns_estimateGas`
+* `vns_gasPrice`
+* `vns_getBalance`
+* `vns_getBlockByNumber`
+* `vns_getBlockByHash`
+* `vns_getBlockTransactionCountByHash`
+* `vns_getBlockTransactionCountByNumber`
+* `vns_getCode` (only supports block number “latest”)
+* `vns_getCompilers`
+* `vns_getFilterChanges`
+* `vns_getFilterLogs`
+* `vns_getLogs`
+* `vns_getStorageAt`
+* `vns_getTransactionByHash`
+* `vns_getTransactionByBlockHashAndIndex`
+* `vns_getTransactionByBlockNumberAndIndex`
+* `vns_getTransactionCount`
+* `vns_getTransactionReceipt`
+* `vns_hashrate`
+* `vns_mining`
+* `vns_newBlockFilter`
+* `vns_newFilter` (includes log/event filters)
+* `vns_protocolVersion`
+* `vns_sendTransaction`
+* `vns_sendRawTransaction`
+* `vns_sign`
+* `vns_subscribe` (only for websocket connections. "syncing" subscriptions are not yet supported)
+* `vns_unsubscribe` (only for websocket connections. "syncing" subscriptions are not yet supported)
+* `vns_syncing`
+* `vns_uninstallFilter`
 * `net_listening`
 * `net_peerCount`
 * `net_version`
@@ -125,7 +125,7 @@ There’s also special non-standard methods that aren’t included within the or
 
 # Unsupported Methods
 
-* `eth_compileSolidity`: If you'd like Solidity compilation in Javascript, please see the [solc-js project](https://github.com/ethereum/solc-js).
+* `vns_compileSolidity`: If you'd like Solidity compilation in Javascript, please see the [solc-js project](https://github.com/ethereum/solc-js).
 
 
 # TESTING
